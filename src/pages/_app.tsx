@@ -12,7 +12,6 @@ export default function App({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
           rel="stylesheet"
         />
-
         <meta
           name="Cordel"
           content="Inspirado no classico conto de Lewis Carrol, o ballet Carol Pansani apresenta uma versao brasileirada ressaltando a importancia da cultura nordestina"
