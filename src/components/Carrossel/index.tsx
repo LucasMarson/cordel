@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -28,7 +28,7 @@ export function Carrossel() {
     <Swiper
       slidesPerView={4}
       autoplay={{
-        delay: 1000,
+        delay: 1200,
         disableOnInteraction: false,
       }}
       pagination={{
