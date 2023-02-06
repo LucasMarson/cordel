@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import Analytics from "@/components/Analytics";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -6,6 +7,7 @@ import Head from "next/head";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+    <Analytics />
       <Head>
         <title>Cordel</title>
         <link
