@@ -5,7 +5,6 @@ import Cordel from "../../assets/images/Cordel.png";
 import { useEffect, useState } from "react";
 import getAllCards from "../api/faunadb";
 
-
 interface Card {
   title: string;
   content: string;
@@ -14,7 +13,6 @@ interface Card {
 interface GetAllCardsResponse {
   data: Array<Card>;
 }
-
 
 export default function Home() {
   const [cards, setCards] = useState<Array<Card>>([]);
@@ -33,7 +31,6 @@ export default function Home() {
 
     fetchData();
   }, []);
-
 
   return (
     <>
@@ -97,17 +94,20 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col mt-8 gap-6">
-            {cards.map((card, i) => {
-              return (
-                <div key={i} className="w-full">
-                  <div className="flex flex-col gap-2 text-center">
-                    <h2 className="text-3xl">{card.title}</h2>
-                    <span>{card.content}</span>
+          <div className="flex flex-col items-center justify-center">
+            <h2 className="text-4xl mt-8">Coreografias</h2>
+            <div className="flex flex-col mt-8 gap-6">
+              {cards.map((card, i) => {
+                return (
+                  <div key={i} className="w-full">
+                    <div className="flex flex-col gap-2 text-center">
+                      <h2 className="text-3xl">{card.title}</h2>
+                      <span>{card.content}</span>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
 
