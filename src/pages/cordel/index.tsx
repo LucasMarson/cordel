@@ -99,7 +99,7 @@ export default function Home() {
             <div className="flex flex-col mt-8 gap-6">
               {cards.map((card, i) => {
                 return (
-                  <div key={i} className="w-full">
+                  <div key={i} className="w-full max-w-lg">
                     <div className="flex flex-col gap-2 text-center">
                       <h2 className="text-3xl">{card.title}</h2>
                       <span>{card.content}</span>
@@ -135,7 +135,7 @@ export default function Home() {
 
         <div className="w-full h-full">
           <div
-            className="w-full h-[260px] bg-center bg-cover"
+            className="w-full h-[260px] bg-center bg-cover sm:bg-contain "
             style={{
               backgroundImage: "url(/fundo.png)",
             }}
