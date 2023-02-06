@@ -27,6 +27,7 @@ export function Carrossel() {
   return (
     <Swiper
       slidesPerView={4}
+      loop={true}
       autoplay={{
         delay: 1200,
         disableOnInteraction: false,

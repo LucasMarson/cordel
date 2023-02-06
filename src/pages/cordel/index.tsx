@@ -1,21 +1,51 @@
 import { Header } from "../../components/Header";
 import Image from "next/image";
-
 import logo from "../../assets/logos/logocpb.png";
 import Cordel from "../../assets/images/Cordel.png";
+import { useEffect, useState } from "react";
+import getAllCards from "../api/faunadb";
+
+
+interface Card {
+  title: string;
+  content: string;
+}
+
+interface GetAllCardsResponse {
+  data: Array<Card>;
+}
+
 
 export default function Home() {
+  const [cards, setCards] = useState<Array<Card>>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await getAllCards();
+        if (result?.data) {
+          setCards(result.data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+
   return (
     <>
       <div className="flex w-full flex-col">
         <Header />
         <div className="h-full px-4 bg-[#1F545A] relative z-10">
-          <div 
+          <div
             className="flex h-full flex-col mt-24 py-16 items-center justify-center bg-no-repeat bg-contain bg-bottom"
             style={{
-              backgroundImage: 'url(/Vector.png)'
+              backgroundImage: "url(/Vector.png)",
             }}
-            >
+          >
             <Image
               className="mb-6"
               src={logo}
@@ -68,12 +98,12 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col mt-8 gap-6">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((card) => {
+            {cards.map((card, i) => {
               return (
-                <div key={card} className="w-full">
+                <div key={i} className="w-full">
                   <div className="flex flex-col gap-2 text-center">
-                    <h2 className="text-3xl">1 - Solo Maria</h2>
-                    <span>Laura Emboaba de Lima Oliveira</span>
+                    <h2 className="text-3xl">{card.title}</h2>
+                    <span>{card.content}</span>
                   </div>
                 </div>
               );
@@ -85,14 +115,20 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-4xl mb-8">Ficha Tecnica</h2>
             <span className="flex text-center max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique necessitatibus aspernatur deserunt eos animi adipisci iure eaque error. Impedit alias unde adipisci explicabo ipsum cum id quas magnam nisi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              similique necessitatibus aspernatur deserunt eos animi adipisci
+              iure eaque error. Impedit alias unde adipisci explicabo ipsum cum
+              id quas magnam nisi.
             </span>
           </div>
 
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-4xl mb-8">Agradecimentos</h2>
             <span className="flex text-center max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique necessitatibus aspernatur deserunt eos animi adipisci iure eaque error. Impedit alias unde adipisci explicabo ipsum cum id quas magnam nisi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              similique necessitatibus aspernatur deserunt eos animi adipisci
+              iure eaque error. Impedit alias unde adipisci explicabo ipsum cum
+              id quas magnam nisi.
             </span>
           </div>
         </div>
