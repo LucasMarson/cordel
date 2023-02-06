@@ -4,6 +4,7 @@ import logo from "../../assets/logos/logocpb.png";
 import Cordel from "../../assets/images/Cordel.png";
 import { useEffect, useState } from "react";
 import getAllCards from "../api/faunadb";
+import { Footer } from "@/components/Footer";
 
 interface Card {
   title: string;
@@ -141,6 +142,7 @@ export default function Home() {
             }}
           ></div>
         </div>
+        <Footer />
       </div>
     </>
   );
