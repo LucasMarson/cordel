@@ -16,7 +16,7 @@ import dentistas from "../../assets/logos/Dentistas.jpg";
 import guada from "../../assets/logos/Guada.jpeg";
 import lindaRosa from "../../assets/logos/lindarosa.png";
 import prancheta from "../../assets/logos/Prancheta.jpg";
-import cinthia from "../../assets/logos/Cinthia.jpg";
+import cinthia from "../../assets/logos/cinthia.jpg";
 
 export function Carrossel() {
 
