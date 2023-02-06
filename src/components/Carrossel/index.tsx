@@ -19,22 +19,20 @@ import prancheta from "../../assets/logos/Prancheta.jpg";
 import cinthia from "../../assets/logos/cinthia.jpg";
 
 export function Carrossel() {
-
   const slidesLogos = [
-    { id: 1, src: lmsolution, alt: "logo LM Solution"},
-    { id: 2, src: bio },
-    { id: 3, src: studio, className: "" },
-    { id: 4, src: benditta },
-    { id: 5, src: koziplast },
-    { id: 6, src: mudde },
-    { id: 7, src: padoquinha },
-    { id: 8, src: dentistas },
-    { id: 9, src: guada },
-    { id: 10, src: lindaRosa },
-    { id: 11, src: prancheta },
-    { id: 12, src: cinthia },
-  ]
-
+    { id: 1, src: lmsolution, alt: "logo LM Solution", slideClass: ""},
+    { id: 2, src: bio, alt: "logo BIO", slideClass: "" },
+    { id: 3, src: studio, alt: "logo Studio", slideClass: "" },
+    { id: 4, src: benditta, alt: "logo Benditta", slideClass: "" },
+    { id: 5, src: koziplast, alt: "logo KoziPlast", slideClass: "" },
+    { id: 6, src: mudde, alt: "logo Mudde", slideClass: "" },
+    { id: 7, src: padoquinha, alt: "logo Padoquinha", slideClass: "" },
+    { id: 8, src: dentistas, alt: "logo Dentistas", slideClass: "" },
+    { id: 9, src: guada, alt: "logo Guada", slideClass: "" },
+    { id: 10, src: lindaRosa, alt: "logo Linda Rosa", slideClass: "" },
+    { id: 11, src: prancheta, alt: "logo Prancheta", slideClass: "" },
+    { id: 12, src: cinthia, alt: "logo Cinthia", slideClass: "" },
+  ];
   const [slides, setSlides] = useState(slidesLogos);
 
   return (
@@ -53,6 +51,7 @@ export function Carrossel() {
       className="mySwiper flex items-center justify-center w-full h-full ease-out"
     >
       {slides.map((slide) => {
+      let slideClass = slide.slideClass || '';
         return (
           <SwiperSlide
             key={slide.id}

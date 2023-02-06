@@ -1,4 +1,4 @@
-import { client, q } from "@/servcies/fauna";
+import { client, q } from "@/lib/fauna";
 interface Card {
     title: string;
     content: string;

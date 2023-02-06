@@ -1,9 +1,9 @@
 import faunadb, { Client } from "faunadb";
 
-const secret = process.env.FAUNADB_SECRET;
+const secret = 'fnAE8JVjXGACVTYxjAX4fYja1n9xJMZRbFsItVyn'
 
 if (!secret) {
-  process.exit(1);
+  throw new Error('FAUNADB_SECRET is not defined in the environment');
 }
 
 export const client = new Client({ secret });
