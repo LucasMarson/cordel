@@ -20,7 +20,7 @@ export default function Analytics() {
   return (
     <>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
         strategy="afterInteractive"
       />
       <Script id="gtag" strategy="afterInteractive">
@@ -29,7 +29,7 @@ export default function Analytics() {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');
+                    gtag('config', '${process.env.GOOGLE_ANALYTICS}');
                 `}
       </Script>
     </>
