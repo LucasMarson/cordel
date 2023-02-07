@@ -1,6 +1,6 @@
 import faunadb, { Client } from "faunadb";
 
-const secret = 'fnAE8JVjXGACVTYxjAX4fYja1n9xJMZRbFsItVyn'
+const secret = process.env.FAUNADB_KEY
 
 if (!secret) {
   throw new Error('FAUNADB_SECRET is not defined in the environment');

@@ -7,7 +7,8 @@ exports.webpack = (config) => {
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    GOOGLE_ANALYTICS: process.env.GOOGLE_ANALYTICS
+    GOOGLE_ANALYTICS: process.env.GOOGLE_ANALYTICS,
+    FAUNADB_KEY: process.env.FAUNADB_KEY
   }
 }
 
