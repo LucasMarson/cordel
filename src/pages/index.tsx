@@ -44,8 +44,7 @@ export default function Home() {
               backgroundImage: "url(/Vector.png)",
             }}
           >
-            <div>
-              <Image
+            <Image
               className="mb-6"
               src={logo}
               width={247}
@@ -59,7 +58,6 @@ export default function Home() {
               height={119}
               alt="Escrita Cordel"
             />
-            </div>
             <div>
               <span className="flex text-center text-white max-w-2xl">
                 Inspirado no Clássico conto de Lewis Carrol - Alice no País das
@@ -177,7 +175,7 @@ export default function Home() {
               apoiadores deste evento e aos colaboradores pelo poder de lapidar
               o coração da nossa escola: nossos alunos, que são incríveis e
               necessários para tudo isso faça sentido. Toda a minha reverência a
-              cada um de vocês! 
+              cada um de vocês!
               <br />
               Que cada aplauso de hoje seja um motivo de apoiar e acreditar no
               poder que a ARTE tem em transformar nossas vidas.
