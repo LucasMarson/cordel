@@ -1,9 +1,9 @@
-import { Header } from "../components/Header";
+import { Header } from "../../components/Header";
 import Image from "next/image";
-import logo from "../assets/logos/logocpb.png";
-import Cordel from "../assets/images/Cordel.png";
+import logo from "../../assets/logos/logocpb.png";
+import Cordel from "../../assets/images/Cordel.png";
 import { useEffect, useState } from "react";
-import getAllCards from "./api/faunadb";
+import getAllCards from "../api/faunadb";
 import { Footer } from "@/components/Footer";
 
 interface Card {
