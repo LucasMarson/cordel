@@ -59,10 +59,9 @@ export function Carrossel() {
           >
             <div className="swiper-slide">
               <Image
-              className="w-[70px] h-[70px]"
                 src={slide.src}
-                width={0}
-                height={0}
+                width={70}
+                height={70}
                 alt={slide.alt || 'Imagem sem descricao'}
               />
             </div>

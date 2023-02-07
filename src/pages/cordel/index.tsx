@@ -44,7 +44,8 @@ export default function Home() {
               backgroundImage: "url(/Vector.png)",
             }}
           >
-            <Image
+            <div>
+              <Image
               className="mb-6"
               src={logo}
               width={247}
@@ -58,6 +59,7 @@ export default function Home() {
               height={119}
               alt="Escrita Cordel"
             />
+            </div>
             <div>
               <span className="flex text-center text-white max-w-2xl">
                 Inspirado no Clássico conto de Lewis Carrol - Alice no País das
