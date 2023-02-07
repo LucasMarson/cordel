@@ -83,7 +83,7 @@ export default function Home() {
                 Manuella Pesse de Paula Ferreira
               </span>
               <span>
-                <span className="font-semibold">Bonecos de Carvaru - </span>
+                <span className="font-semibold">Bonecos de Vitalino - </span>
                 Emanuela Santos e Rafaela Santos
               </span>
               <span>
@@ -148,7 +148,7 @@ export default function Home() {
             <span className="flex text-center max-w-2xl">
               Direção : Ana Carolina Pansani | Direção Artística e Teatral :
               Fabio Miranda e Ludmila de Oliveira | Coordenação e Produção :
-              Silmara de Godoi | Coreografias : Ana Carolina Pansani, Ludmila de
+              Silmara de Godoi | Roteiro : Bianca Almeida | Coreografias : Ana Carolina Pansani, Ludmila de
               Oliveira, Pietra Moroni, Mariana Fernandes e Natalia Stafane de
               Godoi Domingues, | Figurinos : Fábio Miranda | Costureira : Atêlie
               Ponto - Heloize Nunes | Cenografia : Mudde Vintage | Design de Luz
@@ -168,12 +168,12 @@ export default function Home() {
               palco nessa data é algo extremamente importante. Diariamente, nas
               aulas, ensinamos os alunos a superar suas inseguranças e o
               resultado sempre vem em forma de um respiro intenso e gratificante
-              chamado ARTE. Essa ARTE é a que chega na plateia hoje! Obrigada a
-              cada pai que acredita e confia em nosso trabalho, aos
+              chamado ARTE. Essa ARTE é a que chega na plateia hoje!<br /> 
+              Obrigada a cada pai que acredita e confia em nosso trabalho, aos
               colaboradores pelo poder de lapidar o coração da nossa escola:
               nossos alunos, que são incríveis e necessários para tudo isso faça
-              sentido. Toda a minha reverência a cada um de vocês! Que cada
-              aplauso de hoje seja um motivo de apoiar e acreditar no poder que
+              sentido. Toda a minha reverência a cada um de vocês! <br />
+              Que cada aplauso de hoje seja um motivo de apoiar e acreditar no poder que
               a ARTE tem em transformar nossas vidas.
               <span className="flex flex-col items center justify-center text-center">
                 A Deus e minha família,
