@@ -3,6 +3,7 @@ import Script from "next/script";
 import { useEffect } from "react";
 import * as ga from "../../lib/gtag"
 
+
 export default function Analytics() {
   const router = useRouter();
 
