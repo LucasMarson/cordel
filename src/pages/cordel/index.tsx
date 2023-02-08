@@ -50,6 +50,7 @@ export default function Home() {
               width={247}
               height={247}
               alt="Logo Carol Pansani Ballet"
+              loading="lazy"
             />
             <Image
               className="mb-10"
@@ -57,6 +58,7 @@ export default function Home() {
               width={348}
               height={119}
               alt="Escrita Cordel"
+              loading="lazy"
             />
             <div>
               <span className="flex text-center text-white max-w-2xl">
