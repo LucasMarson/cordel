@@ -153,12 +153,12 @@ export default function Home() {
               Fernandes e Natalia Stafane de Godoi Domingues, | Figurinos :
               Fábio Miranda | Costureira : Atêlie Ponto - Heloize Nunes |
               Cenografia : Mudde Vintage | Design de Luz e Microfones: Roberto
-              Cilotti Jr | Trilha Sonora : Ditinho | Publicidade : Comunica
-              Amanda | Folder Digital : LM Solution | Apoio Cultural : Benditta
-              Pizza , Bio Arquitetura , Atêlie Ponto , Kozi Plast, Padoquinha
-              Fermentação Natural, Dentistas Pedreira, Cinthia Murias Médica
-              Veterinária Integrativa, LM Solution, Studio Personal, Mudde
-              Vintage, Linda Rosa, Guadá. |
+              Cilotti Jr | Maquiadores : Fabio Miranda e Dihla | Trilha Sonora :
+              Ditinho | Publicidade : Comunica Amanda | Folder Digital : LM
+              Solution | Apoio Cultural : Benditta Pizza , Bio Arquitetura ,
+              Atêlie Ponto , Kozi Plast, Padoquinha Fermentação Natural,
+              Dentistas Pedreira, Cinthia Murias Médica Veterinária Integrativa,
+              LM Solution, Studio Personal, Mudde Vintage, Linda Rosa, Guadá. |
             </span>
           </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
             <h2 className="text-4xl mb-8">Agradecimentos</h2>
             <span className="flex flex-col gap-4 text-center max-w-xl">
               Hoje comemoramos os seis anos da Carol Pansani Ballet e estar no
-              palco nessa data é algo extremamente importante. Diariamente, nas
+              palco nessa data é algo extremamente importante. Diariamente nas
               aulas, ensinamos os alunos a superar suas inseguranças e o
               resultado sempre vem em forma de um respiro intenso e gratificante
               chamado ARTE. Essa ARTE é a que chega na plateia hoje!
@@ -174,8 +174,10 @@ export default function Home() {
               Obrigada a cada pai que acredita e confia em nosso trabalho, aos
               apoiadores deste evento e aos colaboradores pelo poder de lapidar
               o coração da nossa escola: nossos alunos, que são incríveis e
-              necessários para tudo isso faça sentido. Toda a minha reverência a
-              cada um de vocês!
+              necessários para que tudo isso faça sentido. Agradeço também a
+              Secretaria de Cultura e Economia Criativa de Pedreira e a
+              Secretaria de Cultura e Turismo de Jaguariuna. A minha reverência
+              a cada um de vocês!
               <br />
               Que cada aplauso de hoje seja um motivo de apoiar e acreditar no
               poder que a ARTE tem em transformar nossas vidas.
