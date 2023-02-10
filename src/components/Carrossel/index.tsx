@@ -63,6 +63,7 @@ export function Carrossel() {
                 width={70}
                 height={70}
                 alt={slide.alt || 'Imagem sem descricao'}
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

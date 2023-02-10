@@ -39,10 +39,7 @@ export default function Home() {
         <Header />
         <div className="h-full px-4 bg-[#1F545A] relative z-10">
           <div
-            className="flex h-full flex-col mt-24 py-16 items-center justify-center bg-no-repeat bg-contain bg-bottom"
-            style={{
-              backgroundImage: "url(/Vector.png)",
-            }}
+            className="flex h-full flex-col mt-24 py-16 items-center justify-center"
           >
             <Image
               className="mb-6"
